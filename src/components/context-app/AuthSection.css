@@ -1,0 +1,214 @@
+.auth-section {
+  padding: 40px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.auth-section.light {
+  background: white;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  color: #333;
+}
+
+.auth-section.dark {
+  background: #2d3748;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  color: #fff;
+}
+
+.login-container,
+.logged-in-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.login-container h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #667eea;
+}
+
+.login-form {
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+  padding: 30px;
+  border-radius: 12px;
+  margin: 30px 0;
+}
+
+.auth-section.dark .login-form {
+  background: linear-gradient(135deg, #2d3748 0%, #1a202c 100%);
+  border: 1px solid #667eea;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 600;
+  color: #333;
+}
+
+.auth-section.dark .form-group label {
+  color: #fff;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1em;
+  transition: all 0.3s ease;
+}
+
+.auth-section.dark .form-group input {
+  background: #1a202c;
+  color: #fff;
+  border-color: #667eea;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 12px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.submit-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.submit-btn:active {
+  transform: translateY(0);
+}
+
+.demo-users {
+  margin-top: 30px;
+  padding-top: 30px;
+  border-top: 2px solid #ddd;
+}
+
+.auth-section.dark .demo-users {
+  border-top-color: #667eea;
+}
+
+.demo-users p {
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.demo-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 10px;
+  background: white;
+  border: 2px solid #667eea;
+  border-radius: 8px;
+  color: #667eea;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.auth-section.dark .demo-btn {
+  background: #1a202c;
+  color: #fff;
+}
+
+.demo-btn:hover {
+  background: #667eea;
+  color: white;
+  transform: translateX(5px);
+}
+
+.auth-section.dark .demo-btn:hover {
+  background: #667eea;
+  color: white;
+}
+
+.welcome-message {
+  background: linear-gradient(135deg, #d4fc79 0%, #96f756 100%);
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #2d5016;
+}
+
+.welcome-message h2 {
+  font-size: 1.6em;
+  margin: 0 0 15px 0;
+}
+
+.welcome-message p {
+  margin: 10px 0;
+  font-size: 1.1em;
+}
+
+.explore-btn {
+  width: 100%;
+  padding: 15px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1.1em;
+  font-weight: 600;
+  cursor: pointer;
+  margin-bottom: 15px;
+  transition: all 0.3s ease;
+}
+
+.explore-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.logout-btn {
+  width: 100%;
+  padding: 12px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  background: #ff5252;
+  transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+  .auth-section {
+    padding: 20px;
+  }
+
+  .login-container h2,
+  .login-container p {
+    text-align: center;
+  }
+
+  .demo-users {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,141 @@
+.documentation {
+  padding: 20px 0;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.documentation h2 {
+  font-size: 2em;
+  margin-bottom: 40px;
+  color: #333;
+}
+
+.doc-section {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 30px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-left: 4px solid #f5576c;
+}
+
+.doc-section h3 {
+  font-size: 1.6em;
+  color: #333;
+  margin-bottom: 20px;
+  border-bottom: 2px solid #f5576c;
+  padding-bottom: 10px;
+}
+
+.doc-section h4 {
+  font-size: 1.2em;
+  color: #f5576c;
+  margin-bottom: 10px;
+}
+
+.doc-section p,
+.doc-section ul {
+  line-height: 1.8;
+  color: #555;
+}
+
+.doc-section ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.doc-section li {
+  padding: 8px 0 8px 25px;
+  position: relative;
+}
+
+.doc-section li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: #f5576c;
+  font-weight: bold;
+}
+
+.concepts-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.concept {
+  background: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  border-left: 3px solid #f5576c;
+}
+
+.concept h4 {
+  margin-bottom: 10px;
+  color: #f5576c;
+}
+
+.concept p {
+  font-size: 0.95em;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.pattern {
+  margin-bottom: 30px;
+}
+
+.pattern h4 {
+  margin-bottom: 15px;
+}
+
+.pattern pre {
+  background: #2d3748;
+  color: #e2e8f0;
+  padding: 20px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.pattern code {
+  font-family: 'Courier New', monospace;
+}
+
+.best-practices {
+  columns: 2;
+  column-gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .documentation {
+    padding: 0;
+  }
+
+  .doc-section {
+    padding: 20px;
+    border-radius: 0;
+    margin-bottom: 0;
+    border-left: none;
+    border-top: 4px solid #f5576c;
+  }
+
+  .doc-section h3 {
+    font-size: 1.4em;
+  }
+
+  .concepts-list {
+    grid-template-columns: 1fr;
+  }
+
+  .pattern pre {
+    font-size: 0.8em;
+    padding: 15px;
+  }
+
+  .best-practices {
+    columns: 1;
+  }
+}

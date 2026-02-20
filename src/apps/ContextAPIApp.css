@@ -1,0 +1,28 @@
+.context-app {
+  width: 100%;
+  min-height: 100vh;
+  transition: background-color 0.3s ease;
+}
+
+.context-app.light-mode {
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+.context-app.dark-mode {
+  background-color: #1a1a1a;
+  color: #fff;
+}
+
+.context-content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 30px 20px;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #667eea;
+}

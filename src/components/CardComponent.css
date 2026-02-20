@@ -1,0 +1,129 @@
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.2);
+  border-color: #667eea;
+}
+
+.card.highlighted {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-color: transparent;
+}
+
+.card.highlighted:hover {
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.4);
+}
+
+.card-icon {
+  font-size: 3em;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.card-title {
+  font-size: 1.4em;
+  margin: 0 0 12px 0;
+  color: inherit;
+}
+
+.card-description {
+  flex-grow: 1;
+  font-size: 1em;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  opacity: 0.85;
+}
+
+.card.highlighted .card-description {
+  opacity: 0.95;
+}
+
+.card-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.card-btn {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 0.9em;
+  transition: all 0.3s ease;
+  flex: 1;
+  min-width: 80px;
+}
+
+.card-btn.primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+}
+
+.card.highlighted .card-btn.primary {
+  background: white;
+  color: #667eea;
+}
+
+.card-btn.primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.card-btn.secondary {
+  background: #f0f0f0;
+  color: #333;
+  border: 1px solid #ddd;
+}
+
+.card.highlighted .card-btn.secondary {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+.card-btn.secondary:hover {
+  background: #e0e0e0;
+}
+
+.card.highlighted .card-btn.secondary:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.card-btn.danger {
+  background: #ff6b6b;
+  color: white;
+}
+
+.card-btn.danger:hover {
+  background: #ff5252;
+}
+
+@media (max-width: 600px) {
+  .card {
+    padding: 20px;
+  }
+
+  .card-title {
+    font-size: 1.2em;
+  }
+
+  .card-btn {
+    min-width: 70px;
+    font-size: 0.85em;
+  }
+}
